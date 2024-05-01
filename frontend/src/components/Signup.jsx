@@ -24,6 +24,7 @@ export default function Signup() {
     return (
         <>
             <h3>Signup page</h3>
+            <button onClick={() => { navigate('/signin') }}>Signin</button>
             <div className='signup'>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="name">Name:</label>

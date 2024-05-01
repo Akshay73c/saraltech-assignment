@@ -22,9 +22,13 @@ app.post(`/signup`, async (req, res) => {
   res.json({ result: result, message: "Yep done" });
 });
 
-app.get("/users", async (req, res) => {
-  const users = await prisma.user.findMany();
-  res.json(users);
+app.get("/user/:authourId", async (req, res) => {
+  var { authourId } = req.params;
+  id = parseInt(authourId);
+  const user = await prisma.user.findUnique({
+    where: { id },
+  });
+  res.json(user);
 });
 
 app.post("/signin", async (req, res) => {
@@ -59,7 +63,6 @@ app.get(`/user/:Id/posts`, async (req, res) => {
 });
 
 app.post(`/user/:userId/post`, async (req, res) => {
-  console.log("Got create post req");
   const { title, content, authourEmail } = req.body;
 
   const result = await prisma.post.create({
