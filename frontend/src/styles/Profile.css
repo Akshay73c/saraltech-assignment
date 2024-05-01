@@ -1,0 +1,72 @@
+
+
+.profile {
+  /* Styles for the profile container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  width: 400px;
+}
+
+.feed-part {
+  display: flex;
+}
+
+.profile h2 {
+  /* Styles for the username heading */
+  margin: 0; /* Remove default margin */
+  font-size: 1.2rem;
+}
+
+.profile button {
+  /* Styles for the "Go Back" button */
+  background-color: #ddd;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.create-post {
+  /* Styles for the create post section */
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.create-post h2 {
+  /* Styles for the "Create Post" heading */
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.create-post form {
+  /* Styles for the post creation form */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.create-post label {
+  /* Styles for form labels */
+  font-weight: bold;
+}
+
+.create-post input,
+.create-post textarea {
+  /* Styles for input and textarea fields */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.create-post button {
+  /* Styles for the "Create Post" button */
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

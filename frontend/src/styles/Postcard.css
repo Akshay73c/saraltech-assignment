@@ -1,0 +1,25 @@
+.post-card {
+    /* Basic styling for the postcard container */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+  }
+  
+  
+  
+  .post-card button {
+    /* Style the delete button */
+    background-color: #f00; /* Red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .post-card button:hover {
+    /* Hover effect for the button */
+    background-color: #d00; /* Darker red on hover */
+  }
+  

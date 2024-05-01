@@ -1,0 +1,15 @@
+.feed {
+    /* Styles for the feed container */
+    display: flex;
+    flex-wrap: wrap; /* Allow posts to wrap onto multiple lines */
+    justify-content: space-between; /* Space posts evenly horizontally */
+    /* margin: 20px auto;  */
+    padding: 20px;
+  }
+  
+  .feed h2 {
+    /* Style the "No posts" heading */
+    text-align: center;
+    margin: 20px 0; /* Add some margin for better display */
+  }
+  
